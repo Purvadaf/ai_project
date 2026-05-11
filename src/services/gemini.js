@@ -23,7 +23,7 @@ export const getGeminiChatSession = () => {
   }
 
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash",
+    model: "gemini-1.5-flash",
     systemInstruction,
     generationConfig: {
       temperature: 0.7,
@@ -45,7 +45,7 @@ export const getAssistantResponse = async (prompt) => {
   }
 
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash",
+    model: "gemini-1.5-flash",
     systemInstruction: "You are a helpful teaching assistant. Provide hints, explanations, and guidance. Never provide direct answers or solutions. Help the user learn.",
     generationConfig: {
       temperature: 0.7,
